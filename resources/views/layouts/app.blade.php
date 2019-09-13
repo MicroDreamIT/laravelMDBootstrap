@@ -62,10 +62,9 @@
         <div class="sidebar-fixed position-fixed">
             <a class="logo-wrapper"><img alt="" class="img-fluid" src="/images/assets/logo-mdb-vue-small.png"/></a>
             <mdb-list-group class="list-group-flush">
-                <router-link to="/" @click.native="activeItem = 1">
+                <router-link to="/dashboard" @click.native="activeItem = 1">
                     <mdb-list-group-item :action="true" :class="activeItem === 1 && 'active'">
-                        <mdb-icon icon="chart-pie" class="mr-3"/>
-                        Dashboard
+                        <mdb-icon icon="chart-pie" class="mr-3">Dashboard</mdb-icon>
                     </mdb-list-group-item>
                 </router-link>
                 <router-link to="/" @click.native="activeItem = 2">
